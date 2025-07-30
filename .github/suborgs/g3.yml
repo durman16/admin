@@ -1,0 +1,20 @@
+# .github/suborgs/test.yml
+suborgrepos:
+# define which repos are in "frontend" suborg:
+- g3-*          # any repo name starting with "g3-"
+# suborgteams:
+#   # - Frontend-Team       # (optional) all repos that the Frontend-Team has access to
+
+# Settings specific to g3 repos:
+branches:
+  - name: main
+    protection:
+      required_pull_request_reviews:
+        required_approving_review_count: 2   # front-end repos only need 1 approval
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: true   # maybe relax codeowners for these
+      required_status_checks:
+        strict: false
+        contexts: []
+      enforce_admins: true
+      restrictions: null

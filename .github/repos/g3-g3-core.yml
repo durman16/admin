@@ -1,0 +1,38 @@
+# teams:
+# # - name: approvers
+# #   # The permission to grant the team. Can be one of:
+# #   # * `pull` - can pull, but not push to or administer this repository.
+# #   # * `push` - can pull and push, but not administer this repository.
+# #   # * `admin` - can pull, push and administer this repository.
+# #   permission: admin
+# branches:
+#   - name: main
+#     protection:
+#       required_pull_request_reviews:
+#         require_code_owner_reviews: true
+#         required_approving_review_count: 1   # override to require 3 reviews on main
+#       # (other protection fields can be omitted here if you want them to inherit 
+#       # the higher-level defaults, except that all sub-keys must exist. You can set 
+#       # those you aren't changing to null.)
+#         required_reviewers:
+#             teams:
+#               - approvers
+#       restrictions:
+#         users: 
+#           - cemalcan-seyhan_deopca
+#         teams: []
+#   - name: "FB*"
+#     protection:
+#       required_pull_request_reviews:
+#         require_code_owner_reviews: true
+#         required_approving_review_count: 3   # override to require 3 reviews on main
+#       # (other protection fields can be omitted here if you want them to inherit 
+#       # the higher-level defaults, except that all sub-keys must exist. You can set 
+#       # those you aren't changing to null.)
+#         required_reviewers:
+#             teams:
+#               - approvers
+#       restrictions:
+#         users: 
+#           - cemalcan-seyhan_deopca
+#         teams: []

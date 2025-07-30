@@ -1,0 +1,32 @@
+# .github/suborgs/test.yml
+suborgrepos:
+# define which repos are in "frontend" suborg:
+- g3-gas*      # any repo name starting with "g3-gas"
+# suborgteams:
+#   # - Frontend-Team       # (optional) all repos that the Frontend-Team has access to
+
+teams:
+  - name: frontend
+    # The permission to grant the team. Can be one of:
+    # * `pull` - can pull, but not push to or administer this repository.
+    # * `push` - can pull and push, but not administer this repository.
+    # * `admin` - can pull, push and administer this repository.
+    permission: admin
+  - name: backend
+    permission: pull
+  # Visibility is only honored when the team is created not for existing teams.
+  # It can be either secret (default) or closed (visible to all members of the org)
+
+# Settings specific to g3-gas repos:
+branches:
+  - name: main
+    protection:
+      required_pull_request_reviews:
+        required_approving_review_count: 3   # front-end repos only need 1 approval
+        dismiss_stale_reviews: true
+        require_code_owner_reviews: false   # maybe relax codeowners for these
+      required_status_checks:
+        strict: false
+        contexts: []
+      enforce_admins: true
+      restrictions: null

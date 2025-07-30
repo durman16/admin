@@ -1,0 +1,7 @@
+restrictedRepos:
+  exclude: 
+    - admin
+    - .github
+    - safe-settings
+  include:
+    - g3-g3-core
