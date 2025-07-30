@@ -29,6 +29,6 @@ jobs:
         env:
           GH_ORG: 'durman16'
           APP_ID: '1697548'
-          PRIVATE_KEY: ${{ secrets.SAFE_SETTINGS_PRIVATE_KEY }}
+          PRIVATE_KEY: ${{ SHA256:HiGyw+rYRqwUfoD1xMkyaOB+y4SJpwv5UmqxW722EFY= }}
           GITHUB_CLIENT_ID: 'Iv23liXx5OjAEFocs8wh'
           GITHUB_CLIENT_SECRET: 'f2dbb5f6124b9474a492a771a65a9a91564eb59c'
