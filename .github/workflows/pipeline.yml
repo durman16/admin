@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/checkout@v4
         with:
-          repository: ccseyhantest/safe-settings
+          repository: github/safe-settings
           path: ${{ env.SAFE_SETTINGS_CODE_DIR }}
       - uses: actions/setup-node@v4
         with:
@@ -27,8 +27,8 @@ jobs:
       - run: npm run full-sync
         working-directory: ${{ env.SAFE_SETTINGS_CODE_DIR }}
         env:
-          GH_ORG: 'deop-internal'
-          APP_ID: '1654446'
+          GH_ORG: 'durman16'
+          APP_ID: '1697548'
           PRIVATE_KEY: ${{ secrets.SAFE_SETTINGS_PRIVATE_KEY }}
-          GITHUB_CLIENT_ID: 'Iv23liUpC2Kqqpe1kARo'
-          GITHUB_CLIENT_SECRET: '3dc3fdc1e4e0c37e71087996c65c62681d3df0a0'
+          GITHUB_CLIENT_ID: 'Iv23liXx5OjAEFocs8wh'
+          GITHUB_CLIENT_SECRET: 'f2dbb5f6124b9474a492a771a65a9a91564eb59c'
