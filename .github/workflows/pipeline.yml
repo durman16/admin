@@ -1,12 +1,12 @@
 name: Safe Settings Sync
 
-on:
-  schedule:
-    - cron: "0 */24 * * *"
-  push: 
-    branches:
-      - 'main'
-  workflow_dispatch: {}
+# on:
+#   schedule:
+#     - cron: "0 */24 * * *"
+#   push: 
+#     branches:
+#       - 'main'
+#   workflow_dispatch: {}
 
 jobs:
   safeSettingsSync:
