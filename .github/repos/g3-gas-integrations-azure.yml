@@ -1,8 +1,8 @@
-branches:
-  - name: main
-    protection:
-      required_pull_request_reviews:
-        required_approving_review_count: 4   # override to require 3 reviews on main
-      # (other protection fields can be omitted here if you want them to inherit 
+# branches:
+#   - name: main
+#     protection:
+#       required_pull_request_reviews:
+#         required_approving_review_count: 4   # override to require 3 reviews on main
+#       # (other protection fields can be omitted here if you want them to inherit 
       # the higher-level defaults, except that all sub-keys must exist. You can set 
       # those you aren't changing to null.)
