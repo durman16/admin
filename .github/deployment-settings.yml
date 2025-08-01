@@ -4,4 +4,4 @@ restrictedRepos:
     - .github
     - safe-settings
   include:
-    - g3-g3-core
+    - terraform_workshop02
